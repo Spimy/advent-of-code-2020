@@ -9,7 +9,7 @@ for index, day in enumerate(days):
 while True:
     selected_day = int(input('Run script for day: '))
 
-    if selected_day > len(days) or selected_day < len(days):
+    if not 1 <= selected_day <= len(days):
         print('Exiting for entering an inexistent day...')
         break
 
